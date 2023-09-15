@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="/2617515/css/style.css">
+</head>
+<body>
+    <header>
+      <nav>
+
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Skills</a>
+          </li>
+        </ul>
+      </nav>
+
+      <hr class="horizontal-line">
+
+      <section class="name">
+          <h1>Hi, I´m Sergio </h1>
+          <br>
+          <h1 class="last-name"> Gutierrez</h1>
+          <p>Software Developer Student</p>
+      </section>
+
+    </header>
+
+    <main>
+        <div class="d-flex" style="height: 200px;">
+          <div class="vr"></div>
+        </div>
+
+        <!-- Se agega div llamada contenedor para mover todo el texto con respecto a la linea vertical en about me -->
+        <div class="container-move">
+          <section class="about-me--container">
+            <div class="about-me--cards">
+              <h2 class="subtitle">About me</h2>
+              <div class="cards-p">
+                <p class="left-card">I am a Software Analysis and Development student with a strong passion for technology and 
+                  innovation. I am an individual committed to continuous learning and personal as well as 
+                  professional development, while staying abreast of the latest trends in the technology field</p>
+                <p class="right-card">Constantly seeking new ways to tackle technical challenges and 
+                  feel comfortable working with various programming languages, 
+                  tools, and platforms.</p>
+              </div>
+            </div>
+          </section>
+          
+          <!-- Seccion de titulos obtenidos -->
+          <section class="main-education--container">
+            <h2 class="subtitle">Education</h2>
+            <div class="education-cards--container">
+              <article class="education-detail-card">
+                <p>Tecnologo en analisis y desarrollo de software</p>
+                <p>2022 - Actualidad</p>
+              </article>
+
+              <article class="educatoin-detail--card">
+                <p>Tecnico en Diseño e Integración de Multimedia </p>
+                <p>2020 - 2021</p>
+              </article>
+
+              <article class="educatoin-detail--card">
+                <p>Bachiller Académico</p>
+                <p>2021</p>
+              </article>
+            </div>
+          </section>
+
+
+
+          <!-- Seccion de carousel -->
+          <section class="main-projects-container">
+            <h2 class="subtitle">Projects</h2>
+            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/2617515/images/deepnoteImage.png" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>The largest 
+                      retails in the US</h5>
+                    <p>An analysis of the 25 largest retailers in the United States. A sales analysis that provides visualizations and key data.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="/2617515/images/batabitImage.webp" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Batabit</h5>
+                    <p>Through a landing page design, a "Mobile First" development approach is prioritized. Offering a smooth and pleasant mobile experience.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="/2617515/images/YardSaleImage.png" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Yard Sale</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </section>
+
+        <!-- Seccion para skills -->
+        <section class="skills">
+          <div class="main-skills--container">
+            <h2 class="subtitle">Skills</h2>
+            <div class="image-skills--container">
+              <img src="/2617515/images/Icons/css.png" alt="Icono de css">
+              <img src="/2617515/images/Icons/html.png" alt="Icono de html">
+              <img src="/2617515/images/Icons/javascript.png" alt="Icono de javascript">
+              <img src="/2617515/images/Icons/git.png" alt="Icono de git">
+            </div>
+          </div>
+        </section>
+
+        <hr class="horizontal-line">
+        <!-- Seccion de contactos -->
+        <section class="contact">
+
+          <div class="righ-card card-contact">
+            <button type="button" class="btn btn-outline-primary contact-button">
+              <img src="/2617515/images/Icons/linkedIn .png" alt="">
+              Linkdin
+            </button>
+          </div>
+          <div class="left-card card-contact">
+            <button type="button" class="btn btn-outline-primary contact-button">
+              <img src="/2617515/images/Icons/gitHub.png" alt="">
+              GitHub
+            </button>
+          </div>
+        </section>
+    </main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/js/main.js"></script>
+  </div>
+</main>
+</body>
+</html>

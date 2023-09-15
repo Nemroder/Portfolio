@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+/* Animacion a los botoner del nav */
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* Variables globales */
+:root {
+    --main-blue: #0080dc;
+    --main-purple:#9a2df8;
+    --bg-black: #070707;
+    --white:#ffffff;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--bg-black);
+    color: var(--white);
+    font-size: 1.6rem;
+}
+header {
+    background: linear-gradient(180deg, var(--bg-black) 80%, var(--main-purple) 140%);
+    border-radius: 32px
+    
+}
+
+/* Estilos al nav */
+nav > ul {
+    margin: 20px;
+}
+.nav-link {
+    color: var(--white);
+    z-index: 2;
+    position: relative;
+    padding: 10px 15px;
+}
+.nav-item  {
+    position: relative;
+    margin: 0px 12px;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+/* Animacion a los botones del nav */
+.nav-item:hover {
+
+}
+.nav-item:hover::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 112px;
+    background: linear-gradient( var(--main-blue), var(--main-purple));
+    animation: animate 3s linear infinite;
+}
+.nav-item::after {
+    content: '';
+    position: absolute;
+    background: var(--bg-black);
+    border-radius: 16px;
+    border: 12px;
+    inset: 3px;
+}
+.nav-link:hover {
+    color: var(--white);
+}
+
+/* Estilos a la linea horizontal abajo del nav y sobre contacto */
+.horizontal-line {
+    height: 2px; 
+    background-color: var(--white);
+    margin: 22px 1%;
+}
+
+/* Estilos a linea vertical del about me */
+.d-flex {
+    position:absolute;
+    margin: 0px 2%;
+}
+
+/* Estilos a la seccion name */
+.name {
+    text-align: center;
+    margin: 71px 0px 32px;
+    font-size: 3.4rem;
+}
+.name p {
+    font-weight: lighter;
+    padding: 0px 0px 30px
+}
+.name h1 {
+    font-size: 9.2rem;
+}
+.last-name {
+    margin-top: -60px;
+}
+
+/* Estilos al contenedor que se mueve con respecto al vr */
+.container-move {
+    margin: 0px 8%;
+}
+
+/* Estilos a la seccion about me */
+.about-me--container {
+    
+}
+
+/* Estilos a los subtitulos. Todos tienen misma clase */
+.subtitle {
+    font-size: 3.8rem;
+}
+.cards-p {
+    font-size: 1.8rem;
+}
+.d-flex {
+height: 200px;
+width: 8px;
+margin-left: 2vh;
+background: linear-gradient( var(--main-blue), var(--main-purple));
+border-radius: 8px;
+}
+
+/* Estilo a la seccion education */
+.main-education--container{
+    margin-top: 70px;
+}
+.education-cards--container {
+    text-align: center;
+    margin: 36px 0px 46px;    
+}
+
+/* Estilos a seccion de proyectos */
+.main-projects-container {
+    
+}
+
+/* Estilo del carousel */
+.main-projects-container{
+    margin: 53px 0px;
+}
+.container-carousel{
+    margin: 20px 0px;
+}
+.carousel{
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 51px;
+}
+
+    /* Estilo de las imagenes */
+
+/* Seccion skills */
+.image-skills--container{
+    display: flex;
+    justify-content: center;
+}
+.skills img {
+    height: 8vw;
+    position: relative;
+    margin: 36px 76px;}
+
+/* Seccion contacto */
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact img {
+    height: 10vw;
+    position: relative;
+}
+.contact-button {
+    display: flex;
+    width: 226px;
+    border: 3px solid;
+    border-image: linear-gradient(0deg, var(--main-blue), var(--main-purple));
+    border-image-slice: 1;
+    justify-content: space-evenly;
+    align-items: center;
+    color: var(--white);
+}
+.contact-button:hover {
+    background: linear-gradient(0deg, var(--main-blue), var(--main-purple));
+    border-color: #007ddd; /* Cambia el color del borde en hover */
+    color: #ffffff;
+    
+}
+.left-card button img{
+    padding: 6px;
+}
+.card-contact {
+    
+}
+
+
+
+    AOS.init();
