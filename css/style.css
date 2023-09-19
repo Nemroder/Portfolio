@@ -170,7 +170,7 @@ border-radius: 8px;
 /* Seccion skills */
 .image-skills--container{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 .skills img {
     height: 8vw;
@@ -179,11 +179,10 @@ border-radius: 8px;
 
 /* Seccion contacto */
 .contact {
-    display: flex;
-    justify-content: space-evenly;
+    
 }
 .contact img {
-    height: 10vw;
+    height: 6vw;
     position: relative;
 }
 .contact-button {
@@ -202,11 +201,11 @@ border-radius: 8px;
     color: #ffffff;
     
 }
-.left-card button img{
-    padding: 6px;
-}
 .card-contact {
-    
+    margin: 14px 0px;
+}
+.card-full {
+    display: flex
 }
 
 

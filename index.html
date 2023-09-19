@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -16,19 +17,19 @@
             <a class="nav-link active" aria-current="page" href="#">Active</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="#">About Me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
+            <a class="nav-link" href="#education">Education</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Skills</a>
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
@@ -51,14 +52,14 @@
 
         <!-- Se agega div llamada contenedor para mover todo el texto con respecto a la linea vertical en about me -->
         <div class="container-move">
-          <section class="about-me--container">
+          <section id="about-me" class="about-me--container">
             <div class="about-me--cards">
-              <h2 class="subtitle">About me</h2>
+              <h2 data-aos="fade-right" class="subtitle">About me</h2>
               <div class="cards-p">
-                <p class="left-card">I am a Software Analysis and Development student with a strong passion for technology and 
+                <p data-aos="fade-right" class="left-card">I am a Software Analysis and Development student with a strong passion for technology and 
                   innovation. I am an individual committed to continuous learning and personal as well as 
                   professional development, while staying abreast of the latest trends in the technology field</p>
-                <p class="right-card">Constantly seeking new ways to tackle technical challenges and 
+                <p data-aos="fade-right" class="right-card">Constantly seeking new ways to tackle technical challenges and 
                   feel comfortable working with various programming languages, 
                   tools, and platforms.</p>
               </div>
@@ -66,7 +67,7 @@
           </section>
           
           <!-- Seccion de titulos obtenidos -->
-          <section class="main-education--container">
+          <section id="education"class="main-education--container">
             <h2 class="subtitle">Education</h2>
             <div class="education-cards--container">
               <article class="education-detail-card">
@@ -89,7 +90,7 @@
 
 
           <!-- Seccion de carousel -->
-          <section class="main-projects-container">
+          <section id="projects" class="main-projects-container">
             <h2 class="subtitle">Projects</h2>
             <div id="carouselExampleDark" class="carousel carousel-dark slide">
               <div class="carousel-indicators">
@@ -133,10 +134,10 @@
           </section>
 
         <!-- Seccion para skills -->
-        <section class="skills">
+        <section id="skills" class="skills">
           <div class="main-skills--container">
             <h2 class="subtitle">Skills</h2>
-            <div class="image-skills--container">
+            <div data-aos="fade-down" class="image-skills--container">
               <img src="./images/Icons/css.png" alt="Icono de css">
               <img src="./images/Icons/html.png" alt="Icono de html">
               <img src="./images/Icons/javascript.png" alt="Icono de javascript">
@@ -147,19 +148,27 @@
 
         <hr class="horizontal-line">
         <!-- Seccion de contactos -->
-        <section class="contact">
+        <section id="contact" class="contact">
+          <div>
+            <div class="right-card">
+              <div class="linkedin-card card-contact">
+                <button type="button" class="btn btn-outline-primary contact-button">
+                  <img src="./images/Icons/linkedIn .png" alt="Logo de LinkedIn">
+                  Linkedin
+                </button>
+              </div>
+              <div class="github-card card-contact">
+                <button type="button" class="btn btn-outline-primary contact-button">
+                  <img src="./images/Icons/gitHub.png" alt="Logo de GitHub">
+                  GitHub
+                </button>
+              </div>
+            </div>
 
-          <div class="righ-card card-contact">
-            <button type="button" class="btn btn-outline-primary contact-button">
-              <img src="./images/Icons/linkedIn .png" alt="Logo de LinkedIn">
-              Linkedin
-            </button>
-          </div>
-          <div class="left-card card-contact">
-            <button type="button" class="btn btn-outline-primary contact-button">
-              <img src="./images/Icons/gitHub.png" alt="Logo de GitHub">
-              GitHub
-            </button>
+            <div class="left-card">
+              <p>Sergio Gutierrez © 2023</p>
+            </div>
+          
           </div>
         </section>
     </main>
@@ -169,6 +178,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/main.js"></script>
+
+    <script>
+      AOS.init({})
+    </script>
   </div>
 </main>
 </body>
