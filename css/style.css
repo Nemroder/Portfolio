@@ -188,7 +188,7 @@ border-radius: 8px;
     
 }
 .contact img {
-    height: 7vh;
+    height: 7rem;
     position: relative;
 }
 .contact-button {
@@ -251,9 +251,9 @@ border-radius: 8px;
     }
 }
 
-@media (min-width: 390px) and (min-height: 844px) {
+@media (min-width: 390px) and (max-width: 844px) {
     .d-block {
-        height: 551px;
+        height: 208px;
     }
     .d-flex {
         height: 425px;
@@ -278,7 +278,7 @@ border-radius: 8px;
         margin: 14px 9px;
     }
     .contact img {
-        padding: 5px;
+        padding: 8px;
         
     }
 
